@@ -1,0 +1,2 @@
+#!/usr/bin/env python3
+print(sum([(i - 38) if i < 91 else (i - 96) for i in [ord(list(set(l[:len(l)//2]).intersection(set(l[len(l)//2:])))[0]) for l in [l.strip() for l in open("input").readlines()]]]))
