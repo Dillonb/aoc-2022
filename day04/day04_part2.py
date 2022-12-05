@@ -1,0 +1,2 @@
+#!/usr/bin/env python3
+print(len([(a,b) for a,b in [[set(range(int(b), int(e)+1)) for b,e in [elem.split("-") for elem in x.strip().split(",")]] for x in open("input")] if len(a.intersection(b)) > 0]))
